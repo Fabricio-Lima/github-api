@@ -5,7 +5,7 @@ export const HeaderHTML = styled.header`
   display: flex;
   align-items: center;
   background-color: ${({ theme: { colors } }) => colors.header};
-  height: 11vh; 
+  height: 11vh;
 `;
 
 export const Wrapper = styled.div`
@@ -19,20 +19,20 @@ export const Wrapper = styled.div`
     padding: 8px 16px;
     margin: 0 16px;
     border-radius: 8px;
-    border: 1px solid #ccc;
 
     &:hover {
-      background-color: #225ed8;
-      box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
+      background-color: #6200ee;
     }
 
     span {
       font-weight: bold;
-      color: #ffff;
     }
   }
 `;
 
 export const InputHTML = styled(Input)`
-  width: 600px;
+
+  .mdc-text-field__input {
+    color: white;
+  }
 `;

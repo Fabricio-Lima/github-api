@@ -9,9 +9,8 @@ export const ResetCSS = createGlobalStyle`
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
-  border-style: solid;
-  border-width: 0;
+    box-sizing: border-box;
+    border-width: 0;
 }
 
 /* Document */
@@ -39,6 +38,7 @@ html {
 body {
   margin: 0;
   font-family: roboto,sans-serif;
+  color: #c9d1d9;
 }
 
 /**

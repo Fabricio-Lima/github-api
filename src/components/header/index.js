@@ -5,9 +5,12 @@ import MaterialIcon from '@material/react-material-icon';
 import { HeaderHTML, InputHTML } from "./styled";
 import useGithub from "../../hooks/github-hooks";
 
+import { Input } from '@material/react-text-field';
+
+
 const Header = () => {
   const { getUser } = useGithub();
-  const [usernameForSearch, setUsernameForSearch] = useState();
+  const [ usernameForSearch, setUsernameForSearch ] = useState();
 
   const submitGetUser = () => {
     if (!usernameForSearch) return;
@@ -21,14 +24,15 @@ const Header = () => {
         label='Pesquisar Usuários'
         outlined
         trailingIcon={<MaterialIcon role="button" icon="search"/>}
+        color="white"
         >
-        <InputHTML
-          value={usernameForSearch} 
+        <Input
+          value={usernameForSearch}
           onChange={(event) => setUsernameForSearch(event.target.value)}
         />
-      </TextField>      
-        <button 
-          type="submit" 
+      </TextField>
+        <button
+          type="submit"
           onClick={submitGetUser}
         >
           <span>

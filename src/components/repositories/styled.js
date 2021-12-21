@@ -9,9 +9,8 @@ export const WrapperTabs = styled(Tabs)`
 
 export const WrapperTabList = styled(TabList)`
   list-style-type: none;
-  padding: 4px;
+  margin-left: 20px;
   display: flex;
-  margin: 0;
 `;
 WrapperTabList.tabsRole = "TabList";
 
@@ -43,6 +42,7 @@ export const WrapperTabPanel = styled(TabPanel)`
 
   &.is-selected {
     display: block;
+    background-color: ${({ theme: { colors } }) => colors.background};
   }
 `;
 WrapperTabPanel.tabsRole = "TabPanel";
